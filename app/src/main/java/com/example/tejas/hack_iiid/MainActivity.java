@@ -12,6 +12,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+<<<<<<< HEAD
             
+=======
+        //LottieAnimationView splashAnim=findViewById(R.id.splashAnimView);
+        //splashAnim.playAnimation();
+>>>>>>> 0a1b11f533726ab557d414ee089cba18dafa5087
     }
 }
