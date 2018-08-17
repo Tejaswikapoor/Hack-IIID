@@ -18,7 +18,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".Login.LoginActivity" />
-        <activity android:name=".Login.Registration"></activity>
+        <activity android:name=".Login.Registration" />
+        <activity
+            android:name=".HOME.home_act"
+            android:label="@string/title_activity_home_act"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

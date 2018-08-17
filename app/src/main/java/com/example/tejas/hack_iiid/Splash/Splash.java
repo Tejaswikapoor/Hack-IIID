@@ -5,6 +5,7 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.example.tejas.hack_iiid.HOME.home_act;
 import com.example.tejas.hack_iiid.MainActivity;
 import com.example.tejas.hack_iiid.R;
 
@@ -22,10 +23,13 @@ public class Splash extends AppCompatActivity {
             @Override
             public void run()
             {
-                Intent i = new Intent(Splash.this, MainActivity.class);
+                Intent i = new Intent(Splash.this, home_act.class);
                 startActivity(i);
                 finish();
             }
         }, SPLASH_TIME_OUT);
+
+
     }
+
 }
