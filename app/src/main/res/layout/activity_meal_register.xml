@@ -93,6 +93,7 @@
                 android:layout_height="wrap_content"
                 android:text="Fetching Labels..."
                 android:textSize="18sp"
+                android:id="@+id/meal_image_lablel"
                 android:textColor="@color/colorSubText"
                 android:fontFamily="@font/baloo_bhai_regular"
                 android:layout_margin="8dp" />

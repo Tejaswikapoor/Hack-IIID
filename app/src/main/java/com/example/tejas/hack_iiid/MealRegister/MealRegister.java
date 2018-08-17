@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.tejas.hack_iiid.R;
@@ -23,6 +24,7 @@ import com.github.mikephil.charting.utils.ColorTemplate;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.ml.vision.FirebaseVision;
 import com.google.firebase.ml.vision.cloud.FirebaseVisionCloudDetectorOptions;
 import com.google.firebase.ml.vision.cloud.label.FirebaseVisionCloudLabel;
@@ -62,10 +64,10 @@ public class MealRegister extends AppCompatActivity {
 
 
     public void setUp() {
+        FirebaseApp.initializeApp(MealRegister.this);
         renderUserInfo();
         imageCapturer();
-        //initializeDetectorOptions();
-        //runModel();
+
     }
 
     @Override
@@ -76,6 +78,8 @@ public class MealRegister extends AppCompatActivity {
                 if(data.getExtras().get("data")!=null) {
                     mealImageBitmap = (Bitmap) data.getExtras().get("data");
                     renderImageInView();
+                    initializeDetectorOptions();
+                    runModel(mealImageBitmap);
                 }
             }
         }
@@ -161,19 +165,24 @@ public class MealRegister extends AppCompatActivity {
     }
 
     private void getResults(FirebaseVisionCloudLabelDetector labelDetector, FirebaseVisionImage visionImage) {
+        final TextView ans=findViewById(R.id.meal_image_lablel);
         Task<List<FirebaseVisionCloudLabel>> results = labelDetector.detectInImage(visionImage)
                 .addOnSuccessListener(new OnSuccessListener<List<FirebaseVisionCloudLabel>>() {
                     @Override
                     public void onSuccess(List<FirebaseVisionCloudLabel> labels) {
+                        String labelAns="";
                         for (FirebaseVisionCloudLabel label : labels) {
                             Log.d("label", label.getLabel());
+                            labelAns+=label.getLabel()+"\n";
                         }
+                        ans.setText(labelAns);
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
-
+                        Log.d("bug",e.toString());
+                        ans.setText(e.getLocalizedMessage());
                     }
                 });
     }
