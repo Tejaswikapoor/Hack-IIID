@@ -44,5 +44,9 @@ dependencies {
     //permissions
     implementation 'com.karumi:dexter:4.2.0'
 
+    api 'com.google.firebase:firebase-core:15.0.0'
+
+
 }
 
+apply plugin: 'com.google.gms.google-services'
