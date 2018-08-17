@@ -23,6 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:elevation="16dp"
+                android:id="@+id/card_meal_analysis"
                 android:layout_margin="8dp">
 
                 <LinearLayout
@@ -56,6 +57,7 @@
                     android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:elevation="16dp"
+                android:id="@+id/card_fitness_tracker"
                 android:layout_margin="8dp">
 
                 <LinearLayout
@@ -89,6 +91,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:elevation="16dp"
+                android:id="@+id/card_daily_report"
                 android:layout_margin="8dp">
 
                 <LinearLayout
@@ -122,6 +125,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:elevation="16dp"
+                android:id="@+id/card_history"
                 android:layout_margin="8dp">
 
                 <LinearLayout

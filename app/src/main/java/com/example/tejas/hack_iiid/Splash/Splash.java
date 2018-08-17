@@ -8,6 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.airbnb.lottie.LottieAnimationView;
 import com.example.tejas.hack_iiid.HOME.home_act;
+import com.example.tejas.hack_iiid.Login.LoginActivity;
+import com.example.tejas.hack_iiid.Login.Registration;
 import com.example.tejas.hack_iiid.MainActivity;
 import com.example.tejas.hack_iiid.MealRegister.MealRegister;
 import com.example.tejas.hack_iiid.R;
@@ -28,8 +30,8 @@ public class Splash extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(Splash.this, home_act.class);
-                startActivity(i);
+//                Intent i = new Intent(Splash.this, home_act.class);
+//                startActivity(i);
                 Intent intent = new Intent(Splash.this, home_act.class);
                 startActivity(intent);
                 finish();

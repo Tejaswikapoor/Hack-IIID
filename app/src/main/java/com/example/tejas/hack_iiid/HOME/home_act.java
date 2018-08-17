@@ -1,15 +1,20 @@
 package com.example.tejas.hack_iiid.HOME;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+import com.example.tejas.hack_iiid.Fitness_Tracker;
 import com.example.tejas.hack_iiid.R;
 
 public class home_act extends AppCompatActivity {
+
+    CardView cardmeal,cardfitness,carddaily,cardhistory;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +22,11 @@ public class home_act extends AppCompatActivity {
         setContentView(R.layout.activity_home_act);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        cardmeal = (CardView)findViewById(R.id.card_meal_analysis);
+        cardfitness = (CardView)findViewById(R.id.card_fitness_tracker);
+        carddaily = (CardView)findViewById(R.id.card_daily_report);
+        cardhistory = (CardView)findViewById(R.id.card_history);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -27,6 +37,35 @@ public class home_act extends AppCompatActivity {
             }
         });
 
+        cardmeal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        cardfitness.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intentFitness = new Intent(home_act.this, Fitness_Tracker.class);
+                startActivity(intentFitness);
+            }
+        });
+
+        carddaily.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        cardhistory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 
 }
