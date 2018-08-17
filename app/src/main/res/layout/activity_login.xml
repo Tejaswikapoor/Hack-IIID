@@ -1,9 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login.LoginActivity">
+    tools:context=".Login.LoginActivity"
+    android:orientation="vertical"
+    android:background="#001b17"
+    >
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="166dp"
+        android:src="@drawable/login" />
+
+<EditText
+    android:fontFamily="@font/baloo_bhai_regular"
+
+    android:textColorHint="#fff"
+
+    android:textColor="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:hint="Name"
+    android:gravity="center"
+
+    android:layout_marginLeft="40px"
+    android:layout_marginRight="40px"
+    android:backgroundTint="#ffffff"
+
+    />
+
+    <EditText
+        android:fontFamily="@font/baloo_bhai_regular"
+
+        android:textColorHint="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:hint="Age"
+
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+
+        android:backgroundTint="#ffffff"
+
+        />
+
+    <EditText
+        android:fontFamily="@font/baloo_bhai_regular"
+
+        android:textColorHint="#fff"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:backgroundTint="#ffffff"
+
+        android:hint="Weight"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        />
+
+    <EditText
+        android:fontFamily="@font/baloo_bhai_regular"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+
+        android:backgroundTint="#ffffff"
+
+        android:textColorHint="#fff"
+
+        android:gravity="center"
+        android:hint="Height" />
+
+    <EditText
+        android:fontFamily="@font/baloo_bhai_regular"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:backgroundTint="#ffffff"
+
+        android:textColorHint="#fff"
+
+        android:hint="Disease"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        />
+    <EditText
+        android:fontFamily="@font/baloo_bhai_regular"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:backgroundTint="#ffffff"
+
+        android:textColorHint="#fff"
+
+        android:hint="Allergies"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        />
+
+
+    <Button
+        android:layout_width="263dp"
+        android:layout_height="62dp"
+
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="120px"
+
+        android:text="Submit" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/login" />
+
+</LinearLayout>

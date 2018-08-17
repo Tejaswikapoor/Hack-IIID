@@ -4,7 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HOME.home_act">
+    tools:context=".HOME.home_act"
+    android:theme="@style/AppTheme.AppBarOverlay"
+    android:background="@color/colorPrimary"
+    >
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
