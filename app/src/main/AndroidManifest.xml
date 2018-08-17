@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.tejas.hack_iiid">
 
+    <uses-feature android:name="android.hardware.camera" />
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -22,7 +25,8 @@
         <activity
             android:name=".HOME.home_act"
             android:label="@string/title_activity_home_act"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".MealRegister.MealRegister"></activity>
     </application>
 
 </manifest>
