@@ -5,6 +5,7 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.example.tejas.hack_iiid.MainActivity;
 import com.example.tejas.hack_iiid.R;
 
@@ -16,6 +17,9 @@ public class Splash extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+
+        LottieAnimationView splashAnim=findViewById(R.id.splashAnimView);
+        splashAnim.playAnimation();
 
         new Handler().postDelayed(new Runnable()
         {
