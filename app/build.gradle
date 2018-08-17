@@ -29,4 +29,8 @@ dependencies {
 
     //animations
     implementation 'com.airbnb.android:lottie:2.5.0'
+
+    //material design
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
 }

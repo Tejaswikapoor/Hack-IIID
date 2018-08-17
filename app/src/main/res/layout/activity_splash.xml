@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context=".Splash.Splash">
 
     <com.airbnb.lottie.LottieAnimationView
@@ -36,6 +37,7 @@
         app:layout_constraintVertical_bias="0.157"
         android:fontFamily="@font/baloo_bhai_regular"
         android:text="Fitocracy"
+        android:textColor="@color/colorAccent"
         android:textSize="32sp"
         android:textAlignment="center"/>
 
