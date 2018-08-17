@@ -7,10 +7,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".HOME.home_act"
     tools:showIn="@layout/activity_home_act"
-    android:orientation="vertical"
-
-    >
-
+    android:orientation="vertical">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -19,6 +16,141 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" />
+            android:orientation="vertical"
+            android:background="@color/colorPrimary">
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="16dp"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@android:color/white">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/baloo_bhai_regular"
+                        android:text="Report Analysis"
+                        android:gravity="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="24sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/baloo_bhai_regular"
+                        android:text="This is blah blah This is blah blah This is blah blah This is blah blah This is blah blah"
+                        android:padding="8dp"
+                        android:textColor="@color/colorSubText"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="16dp"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@android:color/white">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/baloo_bhai_regular"
+                        android:text="Report Analysis"
+                        android:gravity="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="24sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/baloo_bhai_regular"
+                        android:text="This is blah blah This is blah blah This is blah blah This is blah blah This is blah blah"
+                        android:padding="8dp"
+                        android:textColor="@color/colorSubText"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="16dp"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@android:color/white">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/baloo_bhai_regular"
+                        android:text="Report Analysis"
+                        android:gravity="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="24sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/baloo_bhai_regular"
+                        android:text="This is blah blah This is blah blah This is blah blah This is blah blah This is blah blah"
+                        android:padding="8dp"
+                        android:textColor="@color/colorSubText"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="16dp"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@android:color/white">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/baloo_bhai_regular"
+                        android:text="Report Analysis"
+                        android:gravity="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="24sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/baloo_bhai_regular"
+                        android:text="This is blah blah This is blah blah This is blah blah This is blah blah This is blah blah"
+                        android:padding="8dp"
+                        android:textColor="@color/colorSubText"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
     </ScrollView>
 </LinearLayout>
