@@ -10,7 +10,7 @@ import com.example.tejas.hack_iiid.R;
 
 public class Splash extends AppCompatActivity {
 
-    private static int SPLASH_TIME_OUT = 3000;
+    private static final int SPLASH_TIME_OUT = 4000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,8 +22,8 @@ public class Splash extends AppCompatActivity {
             @Override
             public void run()
             {
-                Intent i = new Intent(Splash.this, MainActivity.class);
-                startActivity(i);
+                Intent intent = new Intent(Splash.this, MainActivity.class);
+                startActivity(intent);
                 finish();
             }
         }, SPLASH_TIME_OUT);
