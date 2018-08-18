@@ -45,7 +45,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/baloo_bhai_regular"
-                        android:text="This is blah blah This is blah blah This is blah blah This is blah blah This is blah blah"
+                        android:text="By just clicking a picture of what you are eatinng, determine if your current meal is feasible for consumption."
                         android:padding="8dp"
                         android:textColor="@color/colorSubText"
                         android:textSize="18sp"/>
@@ -79,7 +79,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/baloo_bhai_regular"
-                        android:text="This is blah blah This is blah blah This is blah blah This is blah blah This is blah blah"
+                        android:text="Track your step count and get regularly updated fitness goals on your lifestyle"
                         android:padding="8dp"
                         android:textColor="@color/colorSubText"
                         android:textSize="18sp"/>
@@ -113,7 +113,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/baloo_bhai_regular"
-                        android:text="This is blah blah This is blah blah This is blah blah This is blah blah This is blah blah"
+                        android:text="Get your standings in your current regime with comparison with your past efforts"
                         android:padding="8dp"
                         android:textColor="@color/colorSubText"
                         android:textSize="18sp"/>
@@ -147,7 +147,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/baloo_bhai_regular"
-                        android:text="This is blah blah This is blah blah This is blah blah This is blah blah This is blah blah"
+                        android:text="Get to know your possible effecting diseases on your personal data and get preventive strategies"
                         android:padding="8dp"
                         android:textColor="@color/colorSubText"
                         android:textSize="18sp"/>

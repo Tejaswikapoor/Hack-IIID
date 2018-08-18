@@ -9,6 +9,7 @@ import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+import com.example.tejas.hack_iiid.Daily.DailyFigures;
 import com.example.tejas.hack_iiid.Fitness_Tracker;
 import com.example.tejas.hack_iiid.History.History;
 import com.example.tejas.hack_iiid.MainActivity;
@@ -35,7 +36,7 @@ public class home_act extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Health Bot API", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
@@ -61,7 +62,8 @@ public class home_act extends AppCompatActivity {
         carddaily.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intentFitness = new Intent(home_act.this, DailyFigures.class);
+                startActivity(intentFitness);
             }
         });
 
