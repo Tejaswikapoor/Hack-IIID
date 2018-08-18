@@ -12,6 +12,7 @@ import android.view.View;
 import com.example.tejas.hack_iiid.Daily.DailyFigures;
 import com.example.tejas.hack_iiid.Fitness_Tracker;
 import com.example.tejas.hack_iiid.History.History;
+import com.example.tejas.hack_iiid.Login.Registration;
 import com.example.tejas.hack_iiid.MainActivity;
 import com.example.tejas.hack_iiid.MealRegister.MealRegister;
 import com.example.tejas.hack_iiid.R;
@@ -38,6 +39,8 @@ public class home_act extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "Health Bot API", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+                Intent intent=new Intent(home_act.this, Registration.class);
+                startActivity(intent);
             }
         });
 

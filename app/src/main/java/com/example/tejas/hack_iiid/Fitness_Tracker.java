@@ -16,6 +16,7 @@ public class Fitness_Tracker extends AppCompatActivity implements SensorEventLis
     private long steps = 0;
 
     TextView stepTextView;
+    public static SensorManager sensorManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,8 +25,11 @@ public class Fitness_Tracker extends AppCompatActivity implements SensorEventLis
         stepTextView = findViewById(R.id.pedo_count_text);
         LottieAnimationView lottieAnimationView = findViewById(R.id.walkingAnim);
         lottieAnimationView.playAnimation();
-        SensorManager sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
-        Sensor sSensor = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_DETECTOR);
+        sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+        Log.d("bug",sensorManager.toString());
+        if(sensorManager!=null) {
+            Sensor sSensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+        }
     }
 
     @Override
@@ -33,6 +37,8 @@ public class Fitness_Tracker extends AppCompatActivity implements SensorEventLis
         try {
             Sensor sensor = event.sensor;
             float[] values = event.values;
+            Log.d("bugA",sensor.toString()+"");
+            Log.d("bugA",values.length+"");
             int value = -1;
 
             if (values.length > 0) {
@@ -40,7 +46,7 @@ public class Fitness_Tracker extends AppCompatActivity implements SensorEventLis
             }
 
 
-            if (sensor.getType() == Sensor.TYPE_STEP_DETECTOR) {
+            if (sensor.getType() == Sensor.TYPE_STEP_COUNTER) {
                 steps++;
             }
 
