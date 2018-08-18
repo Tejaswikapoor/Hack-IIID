@@ -10,6 +10,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 import com.example.tejas.hack_iiid.Fitness_Tracker;
+import com.example.tejas.hack_iiid.History.History;
+import com.example.tejas.hack_iiid.MainActivity;
+import com.example.tejas.hack_iiid.MealRegister.MealRegister;
 import com.example.tejas.hack_iiid.R;
 
 public class home_act extends AppCompatActivity {
@@ -41,6 +44,8 @@ public class home_act extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                Intent intentMeal = new Intent(home_act.this, MealRegister.class);
+                startActivity(intentMeal);
             }
         });
 
@@ -64,6 +69,8 @@ public class home_act extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                Intent intentHistory = new Intent(home_act.this, History.class);
+                startActivity(intentHistory);
             }
         });
     }
