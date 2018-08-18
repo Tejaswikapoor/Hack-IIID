@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.tejas.hack_iiid">
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <uses-feature android:name="android.hardware.camera" />
@@ -26,9 +27,9 @@
             android:name=".HOME.home_act"
             android:label="@string/title_activity_home_act"
             android:theme="@style/AppTheme" />
-        <activity android:name=".MealRegister.MealRegister">
-        </activity>
-        <activity android:name=".History.History">
+        <activity android:name=".MealRegister.MealRegister"></activity>
+        <activity android:name=".History.History"></activity>
+        <activity android:name=".Daily.DailyFigures">
         </activity>
     </application>
 

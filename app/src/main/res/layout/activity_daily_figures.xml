@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="32dp"
+    android:background="@color/colorPrimary"
+    tools:context=".Daily.DailyFigures">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:fontFamily="@font/baloo_bhai_regular"
+            android:text="History"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="@font/baloo_bhai_regular"
+            android:text="Calories Consumed today : 356 kCal"
+            android:textColor="@color/colorSubText"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="@font/baloo_bhai_regular"
+            android:text="Steps taken today : 1218"
+            android:textColor="@color/colorSubText"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="@font/baloo_bhai_regular"
+            android:text="Monthly Records"
+            android:textColor="@color/colorSubText"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textAlignment="center"
+            android:layout_margin="8dp"
+            android:fontFamily="@font/baloo_bhai_regular"
+            android:text="Steps Distribution Last Week"/>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="8dp"
+            android:background="@android:color/white"
+            android:id="@+id/weekly_steps_chart">
+        </com.github.mikephil.charting.charts.BarChart>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textAlignment="center"
+            android:layout_margin="8dp"
+            android:fontFamily="@font/baloo_bhai_regular"
+            android:text="Calorie Consumption Last Week"/>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="8dp"
+            android:background="@android:color/white"
+            android:id="@+id/weekly_calorie_chart">
+        </com.github.mikephil.charting.charts.BarChart>
+
+
+    </LinearLayout>
+</ScrollView>
