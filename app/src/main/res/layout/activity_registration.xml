@@ -4,119 +4,111 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login.LoginActivity"
+    android:background="@color/colorPrimary"
     android:orientation="vertical"
-    android:background="#001b17">
+    tools:context=".Login.LoginActivity">
 
-    <ImageView
+    <com.airbnb.lottie.LottieAnimationView
         android:layout_width="wrap_content"
         android:layout_height="238dp"
-        android:src="@drawable/login" />
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="personal_character.json"
+        app:lottie_loop="true" />
 
     <EditText
-android:layout_marginTop="90px"
         android:layout_width="match_parent"
-
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
         android:layout_marginLeft="40px"
         android:layout_marginRight="40px"
-        android:backgroundTint="#ffffff"
+        android:layout_marginTop="90px"
+        android:background="@drawable/edit_text_background"
         android:fontFamily="@font/baloo_bhai_regular"
         android:gravity="center"
-
         android:hint="Name"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#fff"
-
-        />
+        android:inputType="text"
+        android:textColor="@color/colorSubText"
+        android:textColorHint="@color/colorSubText" />
 
     <EditText
-        android:fontFamily="@font/baloo_bhai_regular"
-
-        android:textColorHint="#fff"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:background="@drawable/edit_text_background"
+        android:fontFamily="@font/baloo_bhai_regular"
         android:gravity="center"
         android:hint="Age"
-
-        android:layout_marginLeft="40px"
-        android:layout_marginRight="40px"
-
-        android:backgroundTint="#ffffff"
-
-        />
-
-    <EditText
-        android:fontFamily="@font/baloo_bhai_regular"
-
-        android:textColorHint="#fff"
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:backgroundTint="#ffffff"
-
-        android:hint="Weight"
-        android:layout_marginLeft="40px"
-        android:layout_marginRight="40px"
-        />
+        android:inputType="number"
+        android:textColor="@color/colorSubText"
+        android:textColorHint="@color/colorSubText" />
 
     <EditText
         android:layout_width="match_parent"
-
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:layout_marginLeft="40px"
         android:layout_marginRight="40px"
-        android:backgroundTint="#ffffff"
-
+        android:background="@drawable/edit_text_background"
         android:fontFamily="@font/baloo_bhai_regular"
-
         android:gravity="center"
-        android:hint="Disease"
-        android:textColorHint="#fff" />
+        android:hint="Weight(kgs)"
+        android:inputType="numberDecimal"
+        android:textColor="@color/colorSubText"
+        android:textColorHint="@color/colorSubText" />
 
     <EditText
-        android:fontFamily="@font/baloo_bhai_regular"
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:layout_marginLeft="40px"
         android:layout_marginRight="40px"
-
-        android:backgroundTint="#ffffff"
-
-        android:textColorHint="#fff"
-
+        android:background="@drawable/edit_text_background"
+        android:fontFamily="@font/baloo_bhai_regular"
         android:gravity="center"
-        android:hint="Height" />
+        android:hint="Diseases(comma seprated)"
+        android:inputType="text"
+        android:textColor="@color/colorSubText"
+        android:textColorHint="@color/colorSubText" />
 
     <EditText
-        android:fontFamily="@font/baloo_bhai_regular"
-
         android:layout_width="match_parent"
+
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:backgroundTint="#ffffff"
-
-        android:textColorHint="#fff"
-
-        android:hint="Allergies"
+        android:layout_marginBottom="8dp"
         android:layout_marginLeft="40px"
         android:layout_marginRight="40px"
-        />
+        android:background="@drawable/edit_text_background"
+        android:fontFamily="@font/baloo_bhai_regular"
+        android:gravity="center"
+        android:hint="Height(cms)"
+        android:inputType="numberDecimal"
+        android:textColor="@color/colorSubText"
+        android:textColorHint="@color/colorSubText" />
+
+    <EditText
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:background="@drawable/edit_text_background"
+        android:fontFamily="@font/baloo_bhai_regular"
+        android:gravity="center"
+        android:hint="Allergies(comma seprated)"
+        android:textColor="@color/colorSubText"
+        android:textColorHint="@color/colorSubText" />
 
 
     <Button
-        android:layout_width="337dp"
-        android:layout_height="62dp"
-
-        android:layout_marginLeft="120px"
-        android:layout_marginTop="100px"
-
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:fontFamily="@font/baloo_bhai_regular"
+        android:textColor="@color/colorSubText"
         android:text="Submit" />
-
-
 
 </LinearLayout>
