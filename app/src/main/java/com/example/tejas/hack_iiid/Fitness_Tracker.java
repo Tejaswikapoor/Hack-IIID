@@ -17,6 +17,7 @@ public class Fitness_Tracker extends AppCompatActivity implements SensorEventLis
 
     TextView stepTextView;
     public static SensorManager sensorManager;
+    Sensor sSensor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,8 +29,20 @@ public class Fitness_Tracker extends AppCompatActivity implements SensorEventLis
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         Log.d("bug",sensorManager.toString());
         if(sensorManager!=null) {
-            Sensor sSensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+            sSensor = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_COUNTER);
         }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        sensorManager.registerListener(Fitness_Tracker.this,sSensor,SensorManager.SENSOR_DELAY_NORMAL);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        sensorManager.unregisterListener(this);
     }
 
     @Override
@@ -37,8 +50,6 @@ public class Fitness_Tracker extends AppCompatActivity implements SensorEventLis
         try {
             Sensor sensor = event.sensor;
             float[] values = event.values;
-            Log.d("bugA",sensor.toString()+"");
-            Log.d("bugA",values.length+"");
             int value = -1;
 
             if (values.length > 0) {
